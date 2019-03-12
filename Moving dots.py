@@ -123,8 +123,8 @@ class field:
             success = fitness(self, self.dots)
             dead = [dot for dot in self.dots if dot.died]
             
-            print(f"\n{len(dead)} Dot{'s' if len(dead) != 1 else ''} died in this generation.\
-                     \n\n{success} Dot{'s' if success != 1 else ''} managed to reach the goal.")
+            print(f"\n{len(dead)} Dot{'s' if len(dead) != 1 else ''} died in this generation.")
+            print(f"\n{success} Dot{'s' if success != 1 else ''} managed to reach the goal.")
             
             return
         
